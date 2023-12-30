@@ -16,6 +16,9 @@
 		AE89B56E2B3DB26900B98E2C /* beeluxeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89B56D2B3DB26900B98E2C /* beeluxeTests.swift */; };
 		AE89B5782B3DB26900B98E2C /* beeluxeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89B5772B3DB26900B98E2C /* beeluxeUITests.swift */; };
 		AE89B57A2B3DB26900B98E2C /* beeluxeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89B5792B3DB26900B98E2C /* beeluxeUITestsLaunchTests.swift */; };
+		AE89B5872B3DB51400B98E2C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89B5862B3DB51400B98E2C /* SignInView.swift */; };
+		AE89B58A2B3DB94700B98E2C /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = AE89B5892B3DB94700B98E2C /* URLImage */; };
+		AE89B58C2B3DB94700B98E2C /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = AE89B58B2B3DB94700B98E2C /* URLImageStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		AE89B5732B3DB26900B98E2C /* beeluxeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beeluxeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE89B5772B3DB26900B98E2C /* beeluxeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeluxeUITests.swift; sourceTree = "<group>"; };
 		AE89B5792B3DB26900B98E2C /* beeluxeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeluxeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE89B5862B3DB51400B98E2C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE89B58C2B3DB94700B98E2C /* URLImageStore in Frameworks */,
+				AE89B58A2B3DB94700B98E2C /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 				AE89B5562B3DB26100B98E2C /* beeluxeApp.swift */,
 				AE89B5582B3DB26100B98E2C /* Persistence.swift */,
 				AE89B55D2B3DB26200B98E2C /* ContentView.swift */,
+				AE89B5862B3DB51400B98E2C /* SignInView.swift */,
 				AE89B55F2B3DB26900B98E2C /* Assets.xcassets */,
 				AE89B5612B3DB26900B98E2C /* beeluxe.entitlements */,
 				AE89B55A2B3DB26100B98E2C /* beeluxe.xcdatamodeld */,
@@ -151,6 +158,10 @@
 			dependencies = (
 			);
 			name = beeluxe;
+			packageProductDependencies = (
+				AE89B5892B3DB94700B98E2C /* URLImage */,
+				AE89B58B2B3DB94700B98E2C /* URLImageStore */,
+			);
 			productName = beeluxe;
 			productReference = AE89B5532B3DB26100B98E2C /* beeluxe.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +234,9 @@
 				Base,
 			);
 			mainGroup = AE89B54A2B3DB26100B98E2C;
+			packageReferences = (
+				AE89B5882B3DB94600B98E2C /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = AE89B5542B3DB26100B98E2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,6 +283,7 @@
 				AE89B5572B3DB26100B98E2C /* beeluxeApp.swift in Sources */,
 				AE89B55E2B3DB26200B98E2C /* ContentView.swift in Sources */,
 				AE89B5592B3DB26100B98E2C /* Persistence.swift in Sources */,
+				AE89B5872B3DB51400B98E2C /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +635,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE89B5882B3DB94600B98E2C /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE89B5892B3DB94700B98E2C /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE89B5882B3DB94600B98E2C /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		AE89B58B2B3DB94700B98E2C /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE89B5882B3DB94600B98E2C /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AE89B55A2B3DB26100B98E2C /* beeluxe.xcdatamodeld */ = {
