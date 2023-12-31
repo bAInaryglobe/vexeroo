@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5CA4182B40B9A10048A58C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5CA4172B40B9A10048A58C /* WelcomeView.swift */; };
+		AE5CA41A2B40C4140048A58C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5CA4192B40C4140048A58C /* DashboardView.swift */; };
 		AE89B5572B3DB26100B98E2C /* beeluxeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89B5562B3DB26100B98E2C /* beeluxeApp.swift */; };
 		AE89B5592B3DB26100B98E2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89B5582B3DB26100B98E2C /* Persistence.swift */; };
 		AE89B55C2B3DB26100B98E2C /* beeluxe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE89B55A2B3DB26100B98E2C /* beeluxe.xcdatamodeld */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE5CA4172B40B9A10048A58C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		AE5CA4192B40C4140048A58C /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		AE89B5532B3DB26100B98E2C /* beeluxe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beeluxe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE89B5562B3DB26100B98E2C /* beeluxeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeluxeApp.swift; sourceTree = "<group>"; };
 		AE89B5582B3DB26100B98E2C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -106,9 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				AE89B5562B3DB26100B98E2C /* beeluxeApp.swift */,
+				AE5CA4192B40C4140048A58C /* DashboardView.swift */,
 				AE89B5582B3DB26100B98E2C /* Persistence.swift */,
 				AE89B55D2B3DB26200B98E2C /* ContentView.swift */,
 				AE89B5862B3DB51400B98E2C /* SignInView.swift */,
+				AE5CA4172B40B9A10048A58C /* WelcomeView.swift */,
 				AE89B55F2B3DB26900B98E2C /* Assets.xcassets */,
 				AE89B5612B3DB26900B98E2C /* beeluxe.entitlements */,
 				AE89B55A2B3DB26100B98E2C /* beeluxe.xcdatamodeld */,
@@ -280,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE89B55C2B3DB26100B98E2C /* beeluxe.xcdatamodeld in Sources */,
+				AE5CA4182B40B9A10048A58C /* WelcomeView.swift in Sources */,
 				AE89B5572B3DB26100B98E2C /* beeluxeApp.swift in Sources */,
+				AE5CA41A2B40C4140048A58C /* DashboardView.swift in Sources */,
 				AE89B55E2B3DB26200B98E2C /* ContentView.swift in Sources */,
 				AE89B5592B3DB26100B98E2C /* Persistence.swift in Sources */,
 				AE89B5872B3DB51400B98E2C /* SignInView.swift in Sources */,
